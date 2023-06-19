@@ -27,12 +27,12 @@ pip install -r requirements.txt
 
 4. Run the tool with the desired options:
 ```shell
-python subdomain.py  -d example.com -w wordlists/subdomains.txt -o output.txt
+python SubForce.py  -d example.com -w wordlists/subdomains.txt -o output.txt
 
 ```
 Or
 ```shell
-python subdomain.py  -l domains.txt -w wordlists/subdomains.txt -o output.txt
+python SubForce.py  -l domains.txt -w wordlists/subdomains.txt -o output.txt
 ```
 
 Available options:

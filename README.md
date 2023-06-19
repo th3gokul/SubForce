@@ -27,7 +27,7 @@ python subdomain.py  -d example.com -w wordlists/subdomain.txt -o output.txt
 ```
 Or
 ```shell
-python subdomain.py  -d domains.txt -w wordlists/subdomain.txt -o output.txt
+python subdomain.py  -l domains.txt -w wordlists/subdomain.txt -o output.txt
 ```
 
 Available options:

@@ -15,12 +15,17 @@ SubForce is a Python-based tool for performing subdomain bruteforce.
 ```shell
 git clone https://github.com/th3gokul/SubForce.git
 ```
+2. Change Directory
+```shell
+cd SubForce
+
+
 3. Install the required packages:
 ```shell
 pip install -r requirements.txt
 ```
 
-3. Run the tool with the desired options:
+4. Run the tool with the desired options:
 ```shell
 python subdomain.py  -d example.com -w wordlists/subdomains.txt -o output.txt
 
@@ -37,7 +42,7 @@ Available options:
 - `-o`, `--output_file`: Output file to save valid domains. (optional)
 
 
-4. View the results in the console and the saved valid domains in the specified output file.
+5. View the results in the console and the saved valid domains in the specified output file.
 
 ## Contributing
 

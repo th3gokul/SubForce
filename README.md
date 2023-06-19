@@ -1,7 +1,4 @@
 # SubForce
-<p align="center">
-  <img src="https://example.com/path/to/video.gif" alt="Video Demo" width="600">
-</p>
 
 SubForce is a Python-based tool for performing subdomain bruteforce.
 

@@ -13,7 +13,7 @@ SubForce is a Python-based tool for performing subdomain bruteforce.
 
 1. Clone the repository:
 ```shell
-git clone <repository_url>
+git clone [<repository_url>](https://github.com/th3gokul/SubForce.git)
 ```
 3. Install the required packages:
 ```shell

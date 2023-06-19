@@ -61,6 +61,7 @@ red_color = Fore.RED
 cyan_color = Fore.CYAN
 yellow_color = Fore.LIGHTYELLOW_EX
 white_color = Fore.WHITE
+magenta_color = Fore.MAGENTA
 
 banner = r'''
 ███████╗██╗   ██╗██████╗ ███████╗ ██████╗ ██████╗  ██████╗███████╗
@@ -79,7 +80,7 @@ banner = r'''
 valid_domains = []
 invalid_domains = []
 
-print(f"{red_color}{banner}{Style.RESET_ALL}")
+print(f"{magenta_color}{banner}{Style.RESET_ALL}")
 
 try:
     for domain in domains:

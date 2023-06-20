@@ -7,7 +7,6 @@ from colorama import init, Fore, Style
 
 init()
 
-
 def check_subdomain(subdomain, domain):
     try:
         socket.gethostbyname(domain)
@@ -16,7 +15,7 @@ def check_subdomain(subdomain, domain):
     
     def query_dns():
         try:
-            answers = dns.resolver.query(subdomain + '.' + domain, 'A')
+            answers = dns.resolver.resolve(subdomain + '.' + domain, 'A')
             if len(answers) > 0:
                 return f"{subdomain}.{domain}"
         except dns.resolver.NXDOMAIN:
@@ -33,6 +32,7 @@ def check_subdomain(subdomain, domain):
             return result
         except concurrent.futures.TimeoutError:
             return None
+
 
 parser = argparse.ArgumentParser(description='Subdomain Bruteforce.')
 parser.add_argument('-l', '--domains_list', help='The file containing multiple domain inputs.')

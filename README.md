@@ -29,8 +29,8 @@ pip install -r requirements.txt
 ## Usage
 
 ```shell
-python subforce.py -l <domains_list_file> -w <wordlist_file> [-o <output_file>] [-i]
-python subforce.py -d <example.com> -w <wordlist_file> [-o <output_file>]
+python SubForce.py -l <domains_list_file> -w <wordlist_file> [-o <output_file>] [-i]
+python SubForce.py -d <example.com> -w <wordlist_file> [-o <output_file>]
 ```
 1. Perform subdomain brute-forcing for a single domain:
 ```shell

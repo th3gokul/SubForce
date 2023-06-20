@@ -63,6 +63,7 @@ red_color = Fore.RED
 cyan_color = Fore.CYAN
 yellow_color = Fore.LIGHTYELLOW_EX
 white_color = Fore.WHITE
+magenta_color = Fore.MAGENTA
 
 banner = r'''
 ███████╗██╗   ██╗██████╗ ███████╗ ██████╗ ██████╗  ██████╗███████╗
@@ -79,7 +80,7 @@ banner = r'''
 valid_domains = []
 invalid_domains = []
 
-print(f"{red_color}{banner}{Style.RESET_ALL}")
+print(f"{magenta_color}{banner}{Style.RESET_ALL}")
 print(f"{yellow_color}[+] Subforce is running...{Style.RESET_ALL}")
 
 try:
@@ -108,4 +109,4 @@ if valid_domains:
 else:
     with open(filename, 'w') as file:
         file.write("No valid domains found.\n")
-    print(f"\n{red_color}[-] No valid domains found. Message saved to {Style.RESET_ALL}{white_color}'{filename}'{Style.RESET_ALL}")
+    print(f"\n{yellow_color}[-] No valid domains found. Message saved to {Style.RESET_ALL}{white_color}'{filename}'{Style.RESET_ALL}")

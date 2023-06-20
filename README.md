@@ -41,6 +41,10 @@ python SubForce.py  -d example.com -w wordlists/subdomains.txt -o output.txt
 ```shell
 python SubForce.py  -l domains.txt -w wordlists/subdomains.txt -o output.txt
 ```
+3. To perform subdomain brute-forcing using a domains list file/Single Domain, specify a wordlist, save the results to a file, and display invalid domains while running, you can use the following command:
+```shell
+python SubForce.py -l domains.txt -w wordlist.txt -o results.txt -i
+
 
 Available options:
 - `-l, --domains_list`: Specify the file containing multiple domain inputs.

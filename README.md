@@ -57,6 +57,11 @@ Available options:
 
 3. View the results in the console and the saved valid domains in the specified output file.
 
+## Author
+
+- Name: Gokul
+- GitHub: Th3Gokul
+
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.

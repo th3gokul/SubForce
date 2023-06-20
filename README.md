@@ -1,49 +1,57 @@
 # SubForce
 
-SubForce is a Python-based tool for performing subdomain bruteforce.
+Subforce is a subdomain bruteforcing tool written in Python. It helps you discover valid subdomains for a given domain by leveraging a wordlist-based approach and DNS queries.
 
 ## Features
 
 - Perform DNS checks on subdomains for specified domains
 - Supports single domain or multiple domains from a file
 - Uses a wordlist file to generate subdomains for brute-forcing
-- Displays valid and invalid domains in the console
+- Displays the valid subdomains found during the scan.
+- Provides an option to show invalid subdomains.
 - Saves valid domains to an output file
 
-## Usage
+## Installation
 
-1. Clone the repository:
+1. Clone the repository
 ```shell
 git clone https://github.com/th3gokul/SubForce.git
 ```
-2. Change Directory
+2. Navigate to the SubForce directory
 ```shell
 cd SubForce
 ```
-
-3. Install the required packages:
+3. Install the required dependencies by running the following command:
 ```shell
 pip install -r requirements.txt
 ```
 
-4. Run the tool with the desired options:
+## Usage
+
+```shell
+python subforce.py -l <domains_list_file> -w <wordlist_file> [-o <output_file>] [-i]
+python subforce.py -d <example.com> -w <wordlist_file> [-o <output_file>]
+```
+1. Perform subdomain brute-forcing for a single domain:
 ```shell
 python SubForce.py  -d example.com -w wordlists/subdomains.txt -o output.txt
 
 ```
-Or
+2. Perform subdomain brute-forcing using a domains list file:
 ```shell
 python SubForce.py  -l domains.txt -w wordlists/subdomains.txt -o output.txt
 ```
 
 Available options:
-- `-w`, `--wordlist`: Path to the wordlist file containing subdomains to check.
-- `-d`, `--domain`: Single domain to check subdomains for.
-- `-l`, `--domains_list`: File containing multiple domains to check subdomains for.
-- `-o`, `--output_file`: Output file to save valid domains. (optional)
+- `-l, --domains_list`: Specify the file containing multiple domain inputs.
+- `-d, --domain`: Specify the single domain to check subdomains for.
+- `-w, --wordlist`: Specify the path to the subdomains wordlist file.
+- `-o, --output_file`: Specify the output file to save valid domains (default: subforce_results.txt).
+- `-i, --show_invalid`: Show invalid domains while running.
 
 
-5. View the results in the console and the saved valid domains in the specified output file.
+
+3. View the results in the console and the saved valid domains in the specified output file.
 
 ## Contributing
 

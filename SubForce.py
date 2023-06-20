@@ -93,7 +93,7 @@ try:
                 print(f"{cyan_color}[+] Valid domain: {Style.RESET_ALL}{result}")
                 valid_domains.append(result)
             elif args.show_invalid:
-                print(f"{red_color}[-] Invalid domain: {Style.RESET_ALL}{subdomain}.{domain}")
+                print(f"{red_color}[-] Invalid domain  : {Style.RESET_ALL}{subdomain}.{domain}")
                 invalid_domains.append(f"{subdomain}.{domain}")
 except KeyboardInterrupt:
     print(f"\n{red_color}[-] Script terminated by user.{Style.RESET_ALL}")
